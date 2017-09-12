@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Core package for the Hotline ASP.NET Core middleware</Description>
+    <PackageProjectUrl>https://github.com/aevitas/hotline</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/aevitas/hotline</RepositoryUrl>
+    <PackageTags>hotline, error handling, error reporting</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

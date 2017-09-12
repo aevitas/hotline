@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Implementation of Hotline that captures exceptions and reports them to Sentry.</Description>
+    <RepositoryUrl>https://github.com/aevitas/hotline</RepositoryUrl>
+    <PackageTags>sentry, hotline, error reporting, error handling</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
