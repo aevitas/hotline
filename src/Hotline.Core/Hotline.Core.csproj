@@ -7,6 +7,8 @@
     <RepositoryUrl>https://github.com/aevitas/hotline</RepositoryUrl>
     <PackageTags>hotline, error handling, error reporting</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>aevitas</Authors>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

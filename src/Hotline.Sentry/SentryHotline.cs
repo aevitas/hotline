@@ -11,26 +11,26 @@ namespace Hotline.Sentry
     ///     Represents an event logger that logs exceptions and various other types of messages to Sentry.io.
     /// </summary>
     /// <seealso cref="IHotline" />
-    public class SentryHotlineLogger : IHotline
+    public class SentryHotline : IHotline
     {
         private readonly IRavenClient _ravenClient;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="SentryHotlineLogger" /> class.
+        ///     Initializes a new instance of the <see cref="SentryHotline" /> class.
         /// </summary>
         /// <param name="options">The options.</param>
         /// <exception cref="ArgumentNullException">
         ///     options
         ///     or
-        ///     Can not instantiate a SentryHotlineLogger without a valid DSN!
+        ///     Can not instantiate a SentryHotline without a valid DSN!
         /// </exception>
-        public SentryHotlineLogger(IOptions<SentryOptions> options)
+        public SentryHotline(IOptions<SentryOptions> options)
         {
             if (options == null)
                 throw new ArgumentNullException(nameof(options));
 
             if (string.IsNullOrEmpty(options.Value.Dsn))
-                throw new ArgumentNullException("Can not instantiate a SentryHotlineLogger without a valid DSN!");
+                throw new ArgumentNullException("Can not instantiate a SentryHotline without a valid DSN!");
 
             var opts = options.Value;
 

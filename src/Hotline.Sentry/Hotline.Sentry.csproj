@@ -7,6 +7,12 @@
     <PackageTags>sentry, hotline, error reporting, error handling</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>1.0.2</Version>
+    <Authors>aevitas</Authors>
+    <Company />
+    <PackageProjectUrl>https://github.com/aevitas/hotline</PackageProjectUrl>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
