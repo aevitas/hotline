@@ -21,6 +21,12 @@ Now we'll call `Configure<SentryOptions>` to wire up the configuration the middl
 services.Configure<SentryOptions>(Configuration.GetSection("Sentry"));
 ```
 
+Register the `SentryHotline` provider with the DI container:
+
+```csharp
+services.AddScoped<IHotline, SentryHotline>();
+```
+
 Then finally, install the middleware:
 
 ```csharp
