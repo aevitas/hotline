@@ -24,7 +24,7 @@ services.Configure<SentryOptions>(Configuration.GetSection("Sentry"));
 Register the `SentryHotline` provider with the DI container:
 
 ```csharp
-services.AddSingleton<IHotline, SentryHotline>();
+services.AddScoped<IHotline, SentryHotline>();
 ```
 
 Then finally, install the middleware:
